@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dataset</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</head>
+
+<body style="background-color:whitesmoke">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link" href="http://127.0.0.1:5000/">Home</a>
+            <a class="nav-item nav-link" href="http://127.0.0.1:5000/introduction">Introduction</a>
+            <a class="nav-item nav-link active" href="http://127.0.0.1:5000/dataset">Dataset<span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="http://127.0.0.1:5000/visualization">Data Visualization</a>
+            <a class="nav-item nav-link" href="http://127.0.0.1:5000/conclusion">Conclusion</a>
+            <a class="nav-item nav-link" href="http://127.0.0.1:5000/prediction">Prediction</a>
+          </div>
+        </div>
+    </nav>
+    <center>
+      <h2><b>HR Analytics Employee Attrition Dataset </b></h2>
+    </center>
+    <br>
+    <center>
+      <table border="1" class="dataframe">
+        <thead>
+          <tr style="text-align: right;">
+            <th></th>
+            <th>Age</th>
+            <th>Attrition</th>
+            <th>BusinessTravel</th>
+            <th>DailyRate</th>
+            <th>Department</th>
+            <th>DistanceFromHome</th>
+            <th>Education</th>
+            <th>EducationField</th>
+            <th>EmployeeCount</th>
+            <th>EmployeeNumber</th>
+            <th>EnvironmentSatisfaction</th>
+            <th>Gender</th>
+            <th>HourlyRate</th>
+            <th>JobInvolvement</th>
+            <th>JobLevel</th>
+            <th>JobRole</th>
+            <th>JobSatisfaction</th>
+            <th>MaritalStatus</th>
+            <th>MonthlyIncome</th>
+            <th>MonthlyRate</th>
+            <th>NumCompaniesWorked</th>
+            <th>Over18</th>
+            <th>OverTime</th>
+            <th>PercentSalaryHike</th>
+            <th>PerformanceRating</th>
+            <th>RelationshipSatisfaction</th>
+            <th>StandardHours</th>
+            <th>StockOptionLevel</th>
+            <th>TotalWorkingYears</th>
+            <th>TrainingTimesLastYear</th>
+            <th>WorkLifeBalance</th>
+            <th>YearsAtCompany</th>
+            <th>YearsInCurrentRole</th>
+            <th>YearsSinceLastPromotion</th>
+            <th>YearsWithCurrManager</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>0</th>
+            <td>41</td>
+            <td>Yes</td>
+            <td>Travel_Rarely</td>
+            <td>1102</td>
+            <td>Sales</td>
+            <td>1</td>
+            <td>2</td>
+            <td>Life Sciences</td>
+            <td>1</td>
+            <td>1</td>
+            <td>2</td>
+            <td>Female</td>
+            <td>94</td>
+            <td>3</td>
+            <td>2</td>
+            <td>Sales Executive</td>
+            <td>4</td>
+            <td>Single</td>
+            <td>5993</td>
+            <td>19479</td>
+            <td>8</td>
+            <td>Y</td>
+            <td>Yes</td>
+            <td>11</td>
+            <td>3</td>
+            <td>1</td>
+            <td>80</td>
+            <td>0</td>
+            <td>8</td>
+            <td>0</td>
+            <td>1</td>
+            <td>6</td>
+            <td>4</td>
+            <td>0</td>
+            <td>5</td>
+          </tr>
+            <tr>
+            <th>1</th>
+            <td>49</td>
+            <td>No</td>
+            <td>Travel_Frequently</td>
+            <td>279</td>
+            <td>Research &amp; Development</td>
+            <td>8</td>
+            <td>1</td>
+            <td>Life Sciences</td>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>Male</td>
+            <td>61</td>
+            <td>2</td>
+            <td>2</td>
+            <td>Research Scientist</td>
+            <td>2</td>
+            <td>Married</td>
+            <td>5130</td>
+            <td>24907</td>
+            <td>1</td>
+            <td>Y</td>
+            <td>No</td>
+            <td>23</td>
+            <td>4</td>
+            <td>4</td>
+            <td>80</td>
+            <td>1</td>
+            <td>10</td>
+            <td>3</td>
+            <td>3</td>
+            <td>10</td>
+            <td>7</td>
+            <td>1</td>
+            <td>7</td>
+          </tr>
+          <tr>
+            <th>2</th>
+            <td>37</td>
+            <td>Yes</td>
+            <td>Travel_Rarely</td>
+            <td>1373</td>
+            <td>Research &amp; Development</td>
+            <td>2</td>
+            <td>2</td>
+            <td>Other</td>
+            <td>1</td>
+            <td>4</td>
+            <td>4</td>
+            <td>Male</td>
+            <td>92</td>
+            <td>2</td>
+            <td>1</td>
+            <td>Laboratory Technician</td>
+            <td>3</td>
+            <td>Single</td>
+            <td>2090</td>
+            <td>2396</td>
+            <td>6</td>
+            <td>Y</td>
+            <td>Yes</td>
+            <td>15</td>
+            <td>3</td>
+            <td>2</td>
+            <td>80</td>
+            <td>0</td>
+            <td>7</td>
+            <td>3</td>
+            <td>3</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <th>3</th>
+            <td>33</td>
+            <td>No</td>
+            <td>Travel_Frequently</td>
+            <td>1392</td>
+            <td>Research &amp; Development</td>
+            <td>3</td>
+            <td>4</td>
+            <td>Life Sciences</td>
+            <td>1</td>
+            <td>5</td>
+            <td>4</td>
+            <td>Female</td>
+            <td>56</td>
+            <td>3</td>
+            <td>1</td>
+            <td>Research Scientist</td>
+            <td>3</td>
+            <td>Married</td>
+            <td>2909</td>
+            <td>23159</td>
+            <td>1</td>
+            <td>Y</td>
+            <td>Yes</td>
+            <td>11</td>
+            <td>3</td>
+            <td>3</td>
+            <td>80</td>
+            <td>0</td>
+            <td>8</td>
+            <td>3</td>
+            <td>3</td>
+            <td>8</td>
+            <td>7</td>
+            <td>3</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <th>4</th>
+            <td>27</td>
+            <td>No</td>
+            <td>Travel_Rarely</td>
+            <td>591</td>
+            <td>Research &amp; Development</td>
+            <td>2</td>
+            <td>1</td>
+            <td>Medical</td>
+            <td>1</td>
+            <td>7</td>
+            <td>1</td>
+            <td>Male</td>
+            <td>40</td>
+            <td>3</td>
+            <td>1</td>
+            <td>Laboratory Technician</td>
+            <td>2</td>
+            <td>Married</td>
+            <td>3468</td>
+            <td>16632</td>
+            <td>9</td>
+            <td>Y</td>
+            <td>No</td>
+            <td>12</td>
+            <td>3</td>
+            <td>4</td>
+            <td>80</td>
+            <td>1</td>
+            <td>6</td>
+            <td>3</td>
+            <td>3</td>
+            <td>2</td>
+            <td>2</td>
+            <td>2</td>
+            <td>2</td>
+          </tr>
+            <tr>
+            <th>5</th>
+            <td>32</td>
+            <td>No</td>
+            <td>Travel_Frequently</td>
+            <td>1005</td>
+            <td>Research &amp; Development</td>
+            <td>2</td>
+            <td>2</td>
+            <td>Life Sciences</td>
+            <td>1</td>
+            <td>8</td>
+            <td>4</td>
+            <td>Male</td>
+            <td>79</td>
+            <td>3</td>
+            <td>1</td>
+            <td>Laboratory Technician</td>
+            <td>4</td>
+            <td>Single</td>
+            <td>3068</td>
+            <td>11864</td>
+            <td>0</td>
+            <td>Y</td>
+            <td>No</td>
+            <td>13</td>
+            <td>3</td>
+            <td>3</td>
+            <td>80</td>
+            <td>0</td>
+            <td>8</td>
+            <td>2</td>
+            <td>2</td>
+            <td>7</td>
+            <td>7</td>
+            <td>3</td>
+            <td>6</td>
+          </tr>
+        </tbody>
+      </table>
+    </center>
+    <br>
+    <center>This dataframe contains 1470 rows and 35 columns</center>
+    <br>
+    <h3>Column Explanation</h3>
+    <table border="1" class="dataframe">
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>AGE</td>
+        <td>Numerical Value</td>
+      </tr>
+      <tr>
+        <td>ATTRITION</td>
+        <td>Employee leaving the company (0=no, 1=yes) </td>
+      </tr>
+      <tr>
+        <td>BUSINESS TRAVEL</td>
+        <td>(1=No Travel, 2=Travel Frequently, 3=Tavel Rarely) </td>
+      </tr>
+      <tr>
+        <td> DAILY RATE </td>
+        <td>Numerical Value - Salary Level </td>
+      </tr>
+      <tr>
+        <td>DEPARTMENT</td>
+        <td>(1=HR, 2=R&D, 3=Sales)</td>
+      </tr>
+      <tr>
+        <td>DISTANCE FROM HOME</td>
+        <td>Numerical Value - THE DISTANCE FROM WORK TO HOME</td>
+      </tr>
+      <tr>
+        <td>EDUCATION</td>
+        <td>Numerical Value</td>
+      </tr>
+      <tr>
+        <td>EDUCATION FIELD</td>
+        <td>(1=HR, 2=LIFE SCIENCES, 3=MARKETING, 4=MEDICAL SCIENCES, 5=OTHERS, 6= TEHCNICAL)</td>
+      </tr>
+      <tr>
+        <td>EMPLOYEE COUNT</td>
+        <td>Numerical Value</td>
+      </tr>
+      <tr>
+        <td>ENVIROMENT SATISFACTION</td>
+        <td>Numerical Value - SATISFACTION WITH THE ENVIROMENT</td>
+      </tr>
+      <tr>
+        <td>GENDER</td>
+        <td>(1=FEMALE, 2=MALE)</td>
+      </tr>
+      <tr>
+        <td>HOURLY RATE </td>
+        <td>HOURLY RATE</td>
+      </tr>
+      <tr>
+        <td>JOB INVOLVEMENT</td>
+        <td>Numerical Value - JOB INVOLVEMENT</td>
+      </tr>
+      <tr>
+        <td>JOB LEVEL</td>
+        <td>Numerical Value - LEVEL OF JOB</td>
+      </tr>
+      <tr>
+        <td>JOB ROLE</td>
+        <td>(1=HC REP, 2=HR, 3=LAB TECHNICIAN, 4=MANAGER, 5= MANAGING DIRECTOR, 6= REASEARCH DIRECTOR, 7= RESEARCH SCIENTIST, 8=SALES EXECUTIEVE, 9= SALES REPRESENTATIVE)</td>
+      </tr>
+      <tr>
+        <td>JOB SATISFACTION</td>
+        <td>Numerical Value - SATISFACTION WITH THE JOB</td>
+      </tr>
+      <tr>
+        <td>MARITAL STATUS</td>
+        <td>(1=DIVORCED, 2=MARRIED, 3=SINGLE)</td>
+      </tr>
+      <tr>
+        <td>MONTHLY INCOME</td>
+        <td>Numerical Value - MONTHLY SALARY</td>
+      </tr>
+      <tr>
+        <td>MONTHY RATE</td>
+        <td>Numerical Value - MONTHY RATE</td>
+      </tr>
+      <tr>
+        <td>NUMCOMPANIES WORKED</td>
+        <td>Numerical Value - NO. OF COMPANIES WORKED AT</td>
+      </tr>
+      <tr>
+        <td>OVER 18</td>
+        <td>(1=YES, 2=NO)</td>
+      </tr>
+      <tr>
+        <td>OVERTIME</td>
+        <td>(1=NO, 2=YES)</td>
+      </tr>
+      <tr>
+        <td>PERCENT SALARY HIKE</td>
+        <td>Numerical Value - PERCENTAGE INCREASE IN SALARY</td>
+      </tr>
+      <tr>
+        <td>PERFORMANCE RATING</td>
+        <td>Numerical Value - ERFORMANCE RATING</td>
+      </tr>
+      <tr>
+        <td>RELATIONS SATISFACTION</td>
+        <td>Numerical Value - RELATIONS SATISFACTION</td>
+      </tr>
+      <tr>
+        <td>STANDARD HOURS</td>
+        <td>Numerical Value - STANDARD HOURS</td>
+      </tr>
+      <tr>
+        <td>STOCK OPTIONS LEVEL</td>
+        <td>Numerical Value - STOCK OPTIONS</td>
+      </tr>
+      <tr>
+        <td>TOTAL WORKING YEARS</td>
+        <td>Numerical Value - TOTAL YEARS WORKED</td>
+      </tr>
+      <tr>
+        <td>TRAINING TIMES LAST YEAR</td>
+        <td>Numerical Value - HOURS SPENT TRAINING </td>
+      </tr>
+      <tr>
+        <td>WORK LIFE BALANCE</td>
+        <td>Numerical Value - TIME SPENT BEWTWEEN WORK AND OUTSIDE</td>
+      </tr>
+      <tr>
+        <td>YEARS AT COMPANY</td>
+        <td>Numerical Value - TOTAL NUMBER OF YEARS AT THE COMPNAY</td>
+      </tr>
+      <tr>
+        <td>YEARS IN CURRENT ROLE</td>
+        <td>Numerical Value -YEARS IN CURRENT ROLE</td>
+      </tr>
+      <tr>
+        <td>YEARS SINCE LAST PROMOTION</td>
+        <td>Numerical Value - LAST PROMOTION</td>
+      </tr>
+      <tr>
+        <td>YEARS WITH CURRENT MANAGER</td>
+        <td>Numerical Value - YEARS SPENT WITH CURRENT MANAGER</td>
+      </tr>
+    </table>
+
+
+
+</body>
+
+</html>
+
+
